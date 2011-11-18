@@ -3,8 +3,8 @@
 <%% end %>
 <%%= render 'base' %>
 <div class="tools">
-  <%%= link_to '修改', edit_<%= singular_table_name %>_path(@<%= file_name %>) %> |
-  <%%= link_to '返回', <%= index_helper %>_path %>
+  <%%= link_to '修改', edit_<%= singular_table_name %>_path(@<%= file_name %>), :class => "btn small success" %>
+  <%%= link_to '返回', <%= index_helper %>_path, :class => "btn small" %>
 </div>
 <div id="<%= singular_table_name %>">
   <% for attribute in attributes -%>
